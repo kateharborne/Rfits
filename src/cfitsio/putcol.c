@@ -1226,7 +1226,9 @@ int ffiter(int n_cols,
     long rept, rowrept, width, tnull, naxes[9] = {1,1,1,1,1,1,1,1,1}, groups;
     double zeros = 0.;
     char message[FLEN_ERRMSG], keyname[FLEN_KEYWORD], nullstr[FLEN_VALUE];
-    char **stringptr, *nullptr, *cptr;
+    char **stringptr;
+    char *nullptr;
+    char *cptr;
 
     if (*status > 0)
         return(*status);
